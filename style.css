@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*Apply background images to project cards*/
+.project-one {
+    background-image: url("/projects/project-1.jpg");
+}
+
+.project-two {
+    background-image: url("/projects/project-2.jpg");
+}
+
+.project-three {
+    background-image: url("/projects/project-3.jpg");
+}
+
+.project-four {
+    background-image: url("/projects/project-4.jpg");
+}
+
+.sticky-bg {
+    position: relative;
+    background-image: url("/sticky-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.sticky-bg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left top, hsl(328, 100%, 59%), hsl(25, 100%, 50%));
+    opacity: 0.95;
+    z-index: -1;
+}
